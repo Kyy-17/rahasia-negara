@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pop Prabowo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Modal Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>Masukkan Nama Kamu</h2>
+      <input type="text" id="namaPemain" placeholder="Contoh: Zaxxy">
+      <button id="mulaiBtn">Mulai</button>
+    </div>
+  </div>
+
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="bendera.mp4.mp4" type="video/mp4">
+  </video>
+
+  <!-- Judul & Skor -->
+  <h2 id="judul"> PRABOWO POP ✊ </h2>
+  <h1 id="score">Score: 0</h1>
+
+  <!-- Game -->
+  <div id="gameContainer">
+    <img src="prabowo.png-removebg-preview.png" alt="Prabowo" id="prabowo" width="300">
+    <div id="popEffect">+1</div>
+  </div>
+
+  <!-- Tombol Reset -->
+  <button id="resetBtn">Reset Skor</button>
+
+  <!-- Leaderboard -->
+  <div id="leaderboard">
+    <h3>🏆 Leaderboard</h3>
+    <ol id="listLeaderboard"></ol>
+  </div>
+
+  <!-- Suara -->
+  <audio id="popSound" src="hidup-jokowi.mp3.mpeg"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
